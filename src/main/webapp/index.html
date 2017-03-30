@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>WebSocket Client</title>
+		<script type="text/javascript">
+			var wsocket  = new WebSocket("ws://localhost:8080/simple-websocket/echo");   
+			function onMessage(evt) {             
+				console.log(evt.data);          
+			}
+		</script>
+	</head>
+<body>
+<h1>Testing websocket.</h1>
+<p>Please look into the console.log</p>
+</body>
+</html>
